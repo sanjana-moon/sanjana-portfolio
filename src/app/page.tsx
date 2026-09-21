@@ -9,13 +9,13 @@ import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
-    <Container className="">
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Education/>
-      <Contact/>
-    </Container>
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Education />
+      <Contact />
+    </>
   );
 }
