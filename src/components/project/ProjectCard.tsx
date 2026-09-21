@@ -51,7 +51,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.title}
         </h3>
 
-        <p className="mt-4 leading-7 text-text">
+        <p className="mt-3 line-clamp-2 text-text text-justify">
           {project.description}
         </p>
 

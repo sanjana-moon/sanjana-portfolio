@@ -1,5 +1,3 @@
-import Container from "@/components/common/Container";
-import SectionHeading from "@/components/common/SectionHeading";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Education from "@/components/sections/Education";

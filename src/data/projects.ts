@@ -11,7 +11,6 @@ const projects = [
       "Next.js",
       "React",
       "TypeScript",
-      "Tailwind CSS",
       "Node.js",
       "Express.js",
       "MongoDB",

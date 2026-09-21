@@ -55,11 +55,6 @@ export const skillCategories = [
         icon: SiHtml5,
         level: "Advanced",
       },
-      {
-        name: "CSS3",
-        icon: FaCss3Alt,
-        level: "Advanced",
-      },
     ]
   },
 
