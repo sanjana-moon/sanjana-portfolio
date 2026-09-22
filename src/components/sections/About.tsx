@@ -12,7 +12,7 @@ export default function About() {
       <Container>
         <SectionHeading
           title="About Me"
-          subtitle="Get to know me better."
+          subtitle="Get to know me better"
         />
 
         <div className="mx-auto max-w-7xl">
