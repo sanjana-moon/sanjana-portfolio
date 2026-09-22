@@ -13,10 +13,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-});
+// const manrope = Manrope({
+//   subsets: ["latin"],
+//   variable: "--font-manrope",
+// });
 
 export const metadata: Metadata = {
   title: "Sanjana Moon | Portfolio",
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${manrope.variable}`}
+      className={`${inter.variable}`}
     >
       <body className="flex min-h-screen flex-col">
         <ThemeProvider>

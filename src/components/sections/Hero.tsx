@@ -92,7 +92,7 @@ export default function Hero() {
               👋 Hello, I'm
             </span>
 
-            <h1 className="mt-6 font-heading text-4xl font-extrabold leading-tight text-heading sm:text-5xl md:text-6xl xl:text-7xl">
+            <h1 className="mt-6 text-4xl font-extrabold sm:text-5xl md:text-6xl xl:text-7xl">
               {personal.name}
             </h1>
 
