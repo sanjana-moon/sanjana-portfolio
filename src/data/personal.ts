@@ -14,7 +14,7 @@ const personal = {
   image: "/images/profile.jpg",
   resume: {
     label: "Resume",
-    url: "https://drive.google.com/file/d/1RkS5CZOHgRqRJulfOrenbjTS8XRXoiha/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1plWP0ImMniO6E3GnzMvIl_hVgEMSZ2HJ/view?usp=sharing",
   },
   buttons: [
     {
