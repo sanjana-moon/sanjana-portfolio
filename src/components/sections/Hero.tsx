@@ -113,10 +113,12 @@ export default function Hero() {
             </div>
 
             {/* Description */}
-            <p className="mx-auto mt-8 max-w-xl text-base leading-8 text-text md:text-lg lg:mx-0">
+            <p className="mx-auto mt-8 max-w-xl leading-8  text-lg lg:mx-0">
               {personal.tagline}
             </p>
-
+            <p className="mx-auto mt-1 max-w-xl text-text text-md lg:mx-0">
+              {personal.shortBio}
+            </p>
             {/* Buttons */}
             <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
               {personal.buttons.map((button) => (

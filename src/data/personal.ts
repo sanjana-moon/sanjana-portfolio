@@ -2,7 +2,7 @@ const personal = {
   name: "Sanjana Moon",
   designation: "Full Stack Developer",
   tagline:
-"Ambitious ideas in. Clean, working products out.",
+"Ambitious ideas in, Clean products out.",
   shortBio:
     "I turn unfiltered ideas into fast web apps, from the backend logic behind the scenes to sleek interfaces that keep things simple.",
   about:
