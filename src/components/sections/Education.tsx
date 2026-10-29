@@ -15,72 +15,76 @@ export default function Education() {
           subtitle="My academic journey and achievements."
         />
 
-        <div className="mx-auto mt-16 grid max-w-9xl gap-8 lg:grid-cols-12 items-start">
+        <div className="mx-auto mt-16 grid max-w-9xl gap-8 lg:grid-cols-12 items-stretch">
           {/* ================= LEFT: University (Span 7 cols) ================= */}
           {university && (
-            <div className="group rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl lg:col-span-7">
-              {/* Top Section */}
-              <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-                <div className="flex-1">
-                  <h3 className="font-heading text-2xl font-bold text-heading">
-                    {university.degree}
-                  </h3>
+            <div className="group rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl lg:col-span-7 flex flex-col justify-between">
+              <div>
+                {/* Top Section */}
+                <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+                  <div className="flex-1">
+                    <h3 className="font-heading text-2xl font-bold text-heading">
+                      {university.degree}
+                    </h3>
 
-                  {university.field && (
-                    <p className="mt-2 font-medium text-primary">
-                      {university.field}
+                    {university.field && (
+                      <p className="mt-2 font-medium text-primary">
+                        {university.field}
+                      </p>
+                    )}
+
+                    <p className="mt-2 text-lg text-text">
+                      {university.institution}
                     </p>
-                  )}
 
-                  <p className="mt-2 text-lg text-text">
-                    {university.institution}
-                  </p>
-
-                  {"location" in university && university.location && (
-                    <p className="mt-1 text-sm text-text/70">
-                      {university.location}
-                    </p>
-                  )}
-                </div>
-
-                <div className="rounded-2xl bg-primary/10 px-5 py-3 text-center self-start">
-                  <p className="text-xs uppercase tracking-wider text-primary">
-                    Passing Year
-                  </p>
-                  <p className="mt-1 font-semibold text-heading">
-                    {university.duration}
-                  </p>
-                </div>
-              </div>
-
-              {/* Middle Grid: Result & Semesters */}
-              <div className="mt-8 grid gap-6 border-t border-border pt-6 md:grid-cols-3">
-                <div className="rounded-2xl border border-border bg-background p-4 flex flex-col justify-center">
-                  <p className="text-xs uppercase tracking-wider text-text/60">
-                    Overall Result
-                  </p>
-                  <p className="mt-2 text-xl font-bold text-primary">
-                    {university.result}
-                  </p>
-                </div>
-
-                {"semesters" in university && university.semesters && (
-                  <div className="md:col-span-2 grid gap-3 sm:grid-cols-2">
-                    {university.semesters.map((semester) => (
-                      <div
-                        key={semester.semester}
-                        className="rounded-2xl border border-border bg-background p-4 text-center"
-                      >
-                        <p className="text-xs text-text/70">
-                          {semester.semester}
-                        </p>
-                        <p className="mt-1 text-base font-semibold text-heading">
-                          GPA {semester.cgpa}
-                        </p>
-                      </div>
-                    ))}
+                    {"location" in university && university.location && (
+                      <p className="mt-1 text-sm text-text/70">
+                        {university.location}
+                      </p>
+                    )}
                   </div>
-                )}
+
+                  <div className="rounded-2xl bg-primary/10 px-5 py-3 text-center self-start">
+                    <p className="text-xs uppercase tracking-wider text-primary">
+                      Passing Year
+                    </p>
+                    <p className="mt-1 font-semibold text-heading">
+                      {university.duration}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Results in Three Rows (Overall Result + Semesters stacked vertically) */}
+                <div className="mt-8 border-t border-border pt-6 space-y-4">
+                  {/* Row 1: Overall Result */}
+                  <div className="rounded-2xl border border-border bg-background p-4 flex items-center justify-between">
+                    <p className="text-xs uppercase tracking-wider text-text/60">
+                      Overall Result
+                    </p>
+                    <p className="text-lg font-bold text-primary">
+                      {university.result}
+                    </p>
+                  </div>
+
+                  {/* Rows 2 & 3+: Semesters */}
+                  {"semesters" in university && university.semesters && (
+                    <div className="space-y-3">
+                      {university.semesters.map((semester) => (
+                        <div
+                          key={semester.semester}
+                          className="rounded-2xl border border-border bg-background p-4 flex items-center justify-between"
+                        >
+                          <p className="text-sm font-medium text-text/80">
+                            {semester.semester}
+                          </p>
+                          <p className="text-base font-semibold text-heading">
+                            GPA {semester.cgpa}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Relevant Courses */}
@@ -105,12 +109,12 @@ export default function Education() {
           )}
 
           {/* ================= RIGHT: Combined Previous Education (Span 5 cols) ================= */}
-          <div className="group rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl lg:col-span-5">
+          <div className="group rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl lg:col-span-5 flex flex-col">
             <h3 className="font-heading text-2xl font-bold text-heading mb-6">
               Prior Education
             </h3>
 
-            <div className="relative border-l border-border pl-6 space-y-8 ml-2">
+            <div className="relative border-l border-border pl-6 space-y-8 ml-2 flex-1 flex flex-col justify-around">
               {others.map((item) => (
                 <div key={item.id} className="relative">
                   {/* Timeline bullet dot */}
