@@ -15,7 +15,7 @@ export default function About() {
           subtitle="Get to know me better"
         />
 
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-9xl">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
             {/* Left: Description */}
             <div className="flex flex-col justify-center rounded-3xl border border-border bg-surface p-8 shadow-sm transition-all duration-300 hover:border-primary/30 md:p-12">

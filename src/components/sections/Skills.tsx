@@ -8,20 +8,16 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative py-20 md:py-24 lg:py-28"
-    >
+      className="relative py-20 md:py-24 lg:py-28">
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
-
         <div className="absolute right-0 bottom-10 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
       </div>
-
       <Container>
         <SectionHeading
           title="Skills"
-          subtitle="Technologies I use to build modern, scalable and user-friendly web applications."
-        />
+          subtitle="Technologies I use to build modern, scalable and user-friendly web applications."/>
 
         <div className="mt-16 space-y-10">
           {skillCategories.map((category) => (
