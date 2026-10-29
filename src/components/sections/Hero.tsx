@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       <Container>
-        <div className="grid items-center gap-12 py-12 md:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
 
           {/* ================= Image ================= */}
           <div className="order-1 flex justify-center lg:order-2 lg:justify-end">

@@ -27,17 +27,7 @@ export default function Skills() {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="
-                rounded-3xl
-                border
-                border-border
-                bg-surface
-                p-8
-                transition-all
-                duration-300
-                hover:border-primary/40
-              "
-            >
+              className="rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:border-primary/40">
               {/* Category Header */}
               <div className="mb-8">
                 <h3 className="font-heading text-2xl font-bold text-heading">
@@ -62,29 +52,6 @@ export default function Skills() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom Summary */}
-        <div
-          className="
-            mt-16
-            rounded-3xl
-            border
-            border-primary/20
-            bg-primary/5
-            p-8
-            text-center
-          "
-        >
-          <h3 className="font-heading text-2xl font-bold text-heading">
-            Always Learning
-          </h3>
-
-          <p className="mx-auto mt-4 max-w-3xl leading-8 text-text">
-            Technology evolves rapidly, and so do I. I continuously improve my
-            skills by building real-world projects, exploring modern frameworks,
-            and staying up to date with industry best practices.
-          </p>
         </div>
       </Container>
     </section>
