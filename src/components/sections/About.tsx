@@ -51,7 +51,7 @@ export default function About() {
                   </h4>
 
                   <p className="mt-3 font-semibold text-heading">
-                    Undergraduate in B.Sc. Honours in CSE
+                    Pursuing B.Sc. Honours in CSE
                   </p>
                 </div>
 
