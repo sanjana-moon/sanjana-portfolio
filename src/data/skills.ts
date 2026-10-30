@@ -84,7 +84,7 @@ export const skillCategories = [
     title: "Tools & Workflow",
 
     description:
-      "Development tools I use every day.",
+      "Development tools I use every day to make my websites beautiful.",
 
     skills: [
       {
