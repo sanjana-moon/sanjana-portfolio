@@ -10,13 +10,10 @@ import {
   SiMongodb,
   SiGit,
   SiGithub,
-  SiPostman,
   SiVercel,
   SiNetlify,
   SiFigma,
 } from "react-icons/si";
-
-import { FaCss3Alt } from "react-icons/fa6";
 
 export const skillCategories = [
   {
