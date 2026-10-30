@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaStar } from "react-icons/fa";
 
 interface ProjectCardProps {
   project: {
@@ -39,8 +39,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Featured Badge */}
         {project.featured && (
-          <span className="absolute right-5 top-5 rounded-full border border-white/20 bg-black/60 px-4 py-1 text-xs font-semibold text-white backdrop-blur-md">
-            ⭐ Featured
+          <span className="absolute right-5 top-5 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-black/60 px-4 py-1 text-xs font-semibold text-white backdrop-blur-md">
+            <FaStar size={12} className="text-yellow-400" />
+            Featured
           </span>
         )}
       </div>
@@ -51,7 +52,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.title}
         </h3>
 
-        <p className="mt-3 line-clamp-2 text-text text-justify">
+        <p className="mt-3 line-clamp-4 text-text text-justify">
           {project.description}
         </p>
 
@@ -67,29 +68,29 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
 
-        {/* Buttons */}
-        <div className="mt-8 flex flex-wrap gap-3">
+        {/* Buttons — one line, equal width */}
+        <div className="mt-8 flex flex-nowrap gap-2">
           <Link
             href={project.live}
             target="_blank"
-            className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 font-medium text-white transition hover:opacity-90"
+            className="inline-flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg bg-primary px-3 py-2 text-sm font-medium text-white transition hover:opacity-90"
           >
-            Live Demo
-            <ArrowUpRight size={18} />
+            Live Link
+            <ArrowUpRight size={15} />
           </Link>
 
           <Link
             href={project.frontend || project.live || "/"}
             target="_blank"
-            className="inline-flex items-center gap-2 rounded-xl border border-border px-5 py-3 font-medium text-heading transition hover:border-primary"
+            className="inline-flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg border border-border px-3 py-2 text-sm font-medium text-heading transition hover:border-primary"
           >
             GitHub
-            <FaGithub size={18} />
+            <FaGithub size={15} />
           </Link>
 
           <Link
             href={`/project/${project.slug}`}
-            className="inline-flex items-center gap-2 rounded-xl border border-primary px-5 py-3 font-medium text-primary transition hover:bg-primary hover:text-white"
+            className="inline-flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg border border-primary px-3 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
           >
             View Details
           </Link>
