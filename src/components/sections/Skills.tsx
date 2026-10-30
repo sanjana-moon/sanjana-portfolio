@@ -17,7 +17,7 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="group relative grid gap-6 rounded-3xl border border-border/60 bg-background p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-primary/[0.03] hover:shadow-xl hover:shadow-primary/[0.03] md:grid-cols-[280px_1fr] md:gap-10"
+              className="group relative grid gap-6 rounded-3xl border border-border/60 bg-background p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-primary/[0.03] hover:shadow-xl hover:shadow-primary/[0.03] sm:p-6 lg:grid-cols-[minmax(14rem,0.8fr)_minmax(0,1.4fr)] lg:gap-10 lg:p-8"
             >
               {/* Left Column: Index, Title, Description */}
               <div className="flex flex-col justify-start">
@@ -46,7 +46,7 @@ export default function Skills() {
 
               {/* Right Column: Skill Cards Grid */}
               <div className="flex flex-col justify-center">
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
+                <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-3">
                   {category.skills.map((skill) => (
                     <SkillCard
                       key={skill.name}

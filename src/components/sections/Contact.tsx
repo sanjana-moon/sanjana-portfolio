@@ -68,7 +68,7 @@ export default function Contact() {
                   <p className="text-sm text-text/70">
                     Email
                   </p>
-                  <p className="font-semibold text-heading">
+                  <p className="break-all font-semibold text-heading">
                     {personal.email}
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function Contact() {
           </div>
 
           {/* Right */}
-          <div className="rounded-3xl border border-border bg-surface p-8">
+          <div className="rounded-3xl border border-border bg-surface p-5 sm:p-8">
             <form
               onSubmit={handleSubmit}
               className="space-y-6"

@@ -3,6 +3,7 @@ import { Inter, Manrope } from "next/font/google";
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollReveal from "@/components/common/ScrollReveal";
 
 import ThemeProvider from "@/providers/ThemeProvider";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col">
         <ThemeProvider>
           <Navbar />
+          <ScrollReveal />
 
           <main className="flex-1">
             {children}

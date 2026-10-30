@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-7">
+      <div className="p-5 sm:p-7">
         <h3 className="font-heading text-2xl font-bold text-heading">
           {project.title}
         </h3>
@@ -69,7 +69,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Buttons — one line, equal width */}
-        <div className="mt-8 flex flex-nowrap gap-2">
+        <div className="mt-8 flex flex-wrap gap-2">
           <Link
             href={project.live}
             target="_blank"

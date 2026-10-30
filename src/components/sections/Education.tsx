@@ -18,7 +18,7 @@ export default function Education() {
         <div className="mx-auto mt-16 grid max-w-9xl gap-8 lg:grid-cols-12 items-stretch">
           {/* ================= LEFT: University (Span 7 cols) ================= */}
           {university && (
-            <div className="group rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl lg:col-span-7 flex flex-col justify-between">
+            <div className="group flex flex-col justify-between rounded-3xl border border-border bg-surface p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl sm:p-8 lg:col-span-7">
               <div>
                 {/* Top Section */}
                 <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
@@ -57,7 +57,7 @@ export default function Education() {
                 {/* Results in Three Rows (Overall Result + Semesters stacked vertically) */}
                 <div className="mt-8 border-t border-border pt-6 space-y-4">
                   {/* Row 1: Overall Result */}
-                  <div className="rounded-2xl border border-border bg-background p-4 flex items-center justify-between">
+                  <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-background p-4">
                     <p className="text-xs uppercase tracking-wider text-text/60">
                       Overall Result
                     </p>
@@ -72,7 +72,7 @@ export default function Education() {
                       {university.semesters.map((semester) => (
                         <div
                           key={semester.semester}
-                          className="rounded-2xl border border-border bg-background p-4 flex items-center justify-between"
+                          className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-background p-4"
                         >
                           <p className="text-sm font-medium text-text/80">
                             {semester.semester}
@@ -109,7 +109,7 @@ export default function Education() {
           )}
 
           {/* ================= RIGHT: Combined Previous Education (Span 5 cols) ================= */}
-          <div className="group rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl lg:col-span-5 flex flex-col">
+          <div className="group flex flex-col rounded-3xl border border-border bg-surface p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-xl sm:p-8 lg:col-span-5">
             <h3 className="font-heading text-2xl font-bold text-heading mb-6">
               Prior Education
             </h3>

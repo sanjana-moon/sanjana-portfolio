@@ -13,7 +13,7 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className={cn("mb-12 text-center", className)}>
-      <h2 className="text-4xl font-bold md:text-5xl">
+      <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
         {title}
       </h2>
 

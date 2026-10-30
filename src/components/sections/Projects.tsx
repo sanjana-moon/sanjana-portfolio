@@ -29,7 +29,7 @@ export default function Projects() {
         />
 
         {/* Featured Projects */}
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 lg:grid-cols-2 2xl:grid-cols-3">
           {featuredProjects.map((project) => (
             <ProjectCard
               key={project.id}
