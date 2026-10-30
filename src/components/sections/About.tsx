@@ -34,48 +34,48 @@ export default function About() {
 
             {/* Right: Information Cards Box */}
             <div className="rounded-3xl border border-border bg-surface p-8 shadow-sm transition-all duration-300 hover:border-primary/30 md:p-12">
-  <div className="flex h-full flex-col gap-5">
-    <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
-      <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
-        Location
-      </h4>
+              <div className="flex h-full flex-col gap-5">
+                <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
+                  <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Location
+                  </h4>
 
-      <p className="mt-3 font-semibold text-heading">
-        {personal.location}
-      </p>
-    </div>
+                  <p className="mt-3 font-semibold text-heading">
+                    {personal.location}
+                  </p>
+                </div>
 
-    <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
-      <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
-        Education
-      </h4>
+                <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
+                  <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Education
+                  </h4>
 
-      <p className="mt-3 font-semibold text-heading">
-        Undergraduate in B.Sc. Honours in CSE
-      </p>
-    </div>
+                  <p className="mt-3 font-semibold text-heading">
+                    Undergraduate in B.Sc. Honours in CSE
+                  </p>
+                </div>
 
-    <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
-      <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
-        Status
-      </h4>
+                <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
+                  <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Status
+                  </h4>
 
-      <p className="mt-3 font-semibold text-heading">
-        Available for Internship, Freelance & Remote Work
-      </p>
-    </div>
+                  <p className="mt-3 font-semibold text-heading">
+                    Available for Internship, Freelance & Remote Work
+                  </p>
+                </div>
 
-    <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
-      <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
-        Currently Learning
-      </h4>
+                <div className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary">
+                  <h4 className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Currently Learning
+                  </h4>
 
-      <p className="mt-3 font-semibold text-heading">
-        TypeScript & AI Development
-      </p>
-    </div>
-  </div>
-</div>
+                  <p className="mt-3 font-semibold text-heading">
+                    TypeScript & AI Development
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
