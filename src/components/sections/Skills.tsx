@@ -5,7 +5,7 @@ import { skillCategories } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative overflow-hidden py-16 sm:py-20 md:py-32">
+    <section id="skills" className="relative py-24 md:py-32 overflow-hidden">
       <Container>
         <SectionHeading
           title="Skills & Expertise"
@@ -13,11 +13,11 @@ export default function Skills() {
         />
 
         {/* Categories container */}
-        <div className="mt-16 space-y-6 rounded-4xl bg-surface p-4 sm:p-6 md:p-8 xl:p-15">
+        <div className="mt-16 space-y-6 bg-surface p-15 rounded-4xl">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="group relative grid gap-8 rounded-3xl border border-border/60 bg-background p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-primary/[0.03] hover:shadow-xl hover:shadow-primary/[0.03] sm:p-6 lg:p-8 xl:grid-cols-[280px_minmax(0,1fr)] xl:gap-12 xl:p-10"
+              className="group relative grid gap-8 rounded-3xl border border-border/60 bg-background p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-primary/[0.03] hover:shadow-xl hover:shadow-primary/[0.03] md:grid-cols-[280px_1fr] md:gap-12"
             >
               {/* Left Column: Index, Title, Description */}
               <div className="flex flex-col justify-start">
@@ -46,7 +46,7 @@ export default function Skills() {
 
               {/* Right Column: Skill Cards Grid */}
               <div className="flex flex-col justify-center">
-                <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
                   {category.skills.map((skill) => (
                     <SkillCard
                       key={skill.name}
