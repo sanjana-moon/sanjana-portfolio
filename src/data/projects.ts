@@ -19,7 +19,7 @@ const projects = [
     ],
     live: "https://skillforge-ai-eta.vercel.app/",
     frontend: "https://github.com/sanjana-moon/SkillForge",
-    backend: "https://github.com/sanjana-moon/skillforge-server.git",
+    backend: "https://github.com/sanjana-moon/skillforge-server",
     category: "Full Stack",
     challenges: [
       {
@@ -58,8 +58,8 @@ const projects = [
       "JWT",
     ],
     live: "https://dreamvenue.vercel.app/",
-    frontend: "https://github.com/sanjana-moon/DreamVenue.git",
-    backend: "https://github.com/sanjana-moon/DreamVenue-server.git",
+    frontend: "https://github.com/sanjana-moon/DreamVenue",
+    backend: "https://github.com/sanjana-moon/DreamVenue-server",
     category: "Full Stack",
     challenges: [
       {
@@ -101,8 +101,8 @@ const projects = [
       "JWT",
     ],
     live: "https://booksphere-ashy.vercel.app/",
-    frontend: "https://github.com/sanjana-moon/BookSphere.git",
-    backend: "https://github.com/sanjana-moon/booksphere-server.git",
+    frontend: "https://github.com/sanjana-moon/BookSphere",
+    backend: "https://github.com/sanjana-moon/booksphere-server",
     category: "Full Stack",
     challenges: [
       {
@@ -143,7 +143,7 @@ const projects = [
     ],
     live: "https://nestudy.vercel.app/",
     frontend: "https://github.com/sanjana-moon/Nestudy",
-    backend: "https://github.com/sanjana-moon/Nestudy_Server.git",
+    backend: "https://github.com/sanjana-moon/Nestudy_Server",
     category: "Full Stack",
     challenges: [
       {
@@ -180,7 +180,7 @@ const projects = [
     "Tailwind CSS",
   ],
   live: "https://tiles-gallery-beta.vercel.app/",
-  frontend: "https://github.com/sanjana-moon/tiles-gallery.git",
+  frontend: "https://github.com/sanjana-moon/tiles-gallery",
   category: "Frontend",
   challenges: [
     {
