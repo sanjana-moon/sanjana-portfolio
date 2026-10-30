@@ -8,7 +8,7 @@ export default function Education() {
   const others = education.filter((item) => item.id !== 1);
 
   return (
-    <section id="education" className="py-20 md:py-24 lg:py-28">
+    <section id="education" className="py-16 md:py-20 lg:py-24">
       <Container>
         <SectionHeading
           title="Education"

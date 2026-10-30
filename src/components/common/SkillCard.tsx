@@ -22,10 +22,6 @@ export default function SkillCard({
           <h4 className="font-semibold text-heading">
             {name}
           </h4>
-
-          <p className="mt-1 text-sm text-text">
-            {level}
-          </p>
         </div>
       </div>
     </div>

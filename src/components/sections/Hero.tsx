@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       <Container>
-        <div className="grid items-center gap-12 py-12 md:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20">
+        <div className="grid items-center gap-12 py-16 md:py-20 lg:grid-cols-2 lg:gap-16 lg:py-24">
 
           {/* ================= Image ================= */}
           <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
@@ -89,14 +89,14 @@ export default function Hero() {
           <div className="order-2 text-center lg:order-1 lg:text-left">
 
             <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-              👋 Hello, I'm
+              Hello, I'm
             </span>
 
             <h1 className="mt-6 text-3xl font-extrabold sm:text-5xl md:text-6xl xl:text-7xl">
               {personal.name}
             </h1>
 
-            <h2 className="mt-4 text-xl font-semibold text-text md:text-2xl">
+            <h2 className="mt-4 text-2xl font-semibold text-text md:text-3xl lg:text-4xl">
               {personal.designation}
             </h2>
 

@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-20 md:py-24 lg:py-28"
+      className="relative py-16 md:py-20 lg:py-24"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -46,16 +46,6 @@ export default function Projects() {
           >
             View All Projects →
           </Link>
-        </div>
-
-        {/* Bottom Text */}
-        <div className="mt-16 text-center">
-          <p className="mx-auto max-w-2xl leading-8 text-text">
-            Each project reflects my growth as a Full Stack Developer,
-            from designing user-friendly interfaces to building scalable
-            backend systems. I continuously learn, improve, and explore
-            new technologies to create better digital experiences.
-          </p>
         </div>
       </Container>
     </section>
